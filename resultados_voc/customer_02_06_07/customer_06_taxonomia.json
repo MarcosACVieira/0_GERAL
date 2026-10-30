@@ -1,0 +1,231 @@
+{
+ "segment": "mobility_customer",
+ "cr": "lost and found",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:32 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 17.1,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Driver ignores recovery messages",
+   "description": "The driver does not reply to in-app recovery messages, including messages already viewed.",
+   "share": 14.1,
+   "examples": [
+    "Sin relación con una renta | La billetera | Negra | 3166990617 | No me contestan | Pero depronto cogen la billetera | Esa no es la persona | Ya me respondieron",
+    "Sin relación con un viaje | ayer viaje en Didi con Jeremías, me dijo que se llamaba el conductor y mi nieto olvidó un juguete de si preferencia en la parte de atrás de auto y le mandé mensaje y no me respondió... 🤷🏻‍♀️ | Sin relación con un viaje | Mi número de teléfono es 113556-6592 | Supuestament"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Driver does not answer recovery calls",
+   "description": "The driver's contact rings unanswered, reaches voicemail, or is deliberately rejected.",
+   "share": 11.2,
+   "examples": [
+    "Não relacionado a uma corrida | Não , pela conta do meu marido | Meu marido perdeu o celular na 99 | Ficou no carro | Poderia agilizar | O motorista se chamava André | Verifique rápido moço pelo amor de Deus | Motorista Alexx | Claro | Carro Gol branco | Não está atendendo | Não tem como vocês local",
+    "Sin relación con una renta | Solicito el asesor pr a resolver el problema aen ñroceso | Un asesor | Esta bien | Entonces, desde ayer estuve llamando tantas veces al arrendador para devolverme el casco | No responde nada | Ayer, el día 27 de Octubre | 4:32 pm | Al lugar: Instituto Departamental del B"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Masked contact number cannot connect",
+   "description": "The provided temporary contact is invalid, blocked, unavailable, or fails to complete calls.",
+   "share": 8.9,
+   "examples": [
+    "Preciso do meu óculos que ficou no banco de trás do carro | 11992313236 | I need help | Suyanne | Me ajuda a falar com o motorista | Ele me deixou no cantaloup | Deixei meu óculos no banco de trás | Não dei ligar no número | Não deu",
+    "Não relacionado a uma corrida | Estou tentando contato c motorista q peguei ontem pois deixei um objeto no carro , mas nao consigo resposta | Claro | 21980863339 | Deu indisponível | Não relacionado a uma corrida | Não relacionado a uma corrida | Estou esperando a resposta do motorista"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Lost phone holds account and trip access",
+   "description": "The lost device or another person's account contains the trip, preventing the requester accessing its recovery tools.",
+   "share": 6.2,
+   "examples": [
+    "Não relacionado a uma corrida | Não outra conta | Celular | 73988320118",
+    "Não relacionado a uma corrida | Minha amiga esqueceu uma bolsa no carro e não consegue contato com motorista | Não outra conta | Paulo, minha amiga esqueceu uma bolsa no carro e não consegue falar com o motorista | Não na conta dela mas não estão conseguindo falar com vocês | Tenho esses dados estou"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Recovery contact procedure is unclear",
+   "description": "The passenger needs a working driver contact or instructions to initiate recovery because the app provides no usable next step.",
+   "share": 19.0,
+   "examples": [
+    "Deixei um item no carro | Gostaria de recupera-lo como faço | Uma Bíblia | 11)941072973 | Meu número",
+    ", se me quedó un artículo en un carro | Un tapete | 3016483156"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Driver fails agreed return appointment",
+   "description": "The driver confirmed finding the item or promised a return but did not deliver it as agreed.",
+   "share": 2.9,
+   "examples": [
+    "Não relacionado a uma corrida | ! Não estou conseguindo reaver um item que perdi. Motorista já confirmou que achou o item. | Uma penca de chaves! Estou pensando em ir a uma delegacia denunciar o motorista, mediante ao fato que tenho aqui as informações complementares do mesmo. Não sei com quem estou",
+    "Não relacionado a uma corrida | Eu esqueci um sapato da minha filha no Uber desse rapaz entrei em contato com ele ele disse que iria vim me entregar até agora não veio e não responde mais | Não relacionado a uma corrida | Bom noite Estou tentando entrar em contato com o motorista mais ler não respon"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Driver allegedly keeps or steals belongings",
+   "description": "The passenger reports intentional appropriation, denial despite evidence, or unauthorized use of belongings or cards by the driver.",
+   "share": 5.2,
+   "examples": [
+    "Não relacionado a uma corrida | Todas As Minhas Roupas Estão Na Mala Estou Sem Nem Uma Roupa Para Usar Tentei Entra Em Contato Com motorista mas O mesmo Não Mim Responder | Não relacionado a uma corrida | Tou Com um problema | Em uma corrida Asim que cheguei no meu destino Quando Paguei A Corrida qu",
+    "Não relacionado a uma corrida | Murilo Fala algo pra mim e melhor entrar em contato com a POLICIA eu trabalho com o Coronel Eu não quero falar com ele mais vou falar | Motorista e ladrão | Tu e o 8 que pergunta pra mim o ocorrido | O detalhe e que o motorista do 99 Me roubou e isto E vocês não estão"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Driver leaves with belongings during stop",
+   "description": "The driver ends or cancels the trip and drives away with belongings while the passenger is outside at an intermediate stop.",
+   "share": 1.4,
+   "examples": [
+    "Não relacionado a uma corrida | Não,foi em outra | Wesley | Meu nome é Beatriz e meu marido solicitou 99 para mim o motorista aceitou só q eu não sabia dessa nova regra do código eu pedi pro motorista espera | Ele não esperou eu pegar código com meu marido ele cancelou a viagem e levo minha chave | ",
+    "Preciso | Voltar | Isto com | Com corrida | Esqueci um item | Mais o motorista | Concelou"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Goods sent by ride are not delivered",
+   "description": "A driver carrying goods through a ride or delivery does not hand them over at the intended destination.",
+   "share": 2.0,
+   "examples": [
+    "Sin relación con un viaje | La verdad ya fue mucho Tiempo pues paquete no llego a su destino desde antes de las 2 de la tarde me e querido comunicar con el no contesta llamadas ni mensajes | El es el que se llevó mi paquete solo pido lo regrese dónde lo recogió si no dio con el domicilio | Ya me can",
+    "O motorista n̈ entregou o que mandei pela corrida | Eu pedi um carro | Eu preciso de ajuda | Eu pediu-me carro | E mandei nele uma cesta básica | Pra entregar pra uma família | E o carro n̈ chegou no destino | Ta bom | Me transferi por gentileza | Ninguém guém me atendeu se vc fez a transferência al"
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Support closes recovery without confirmation",
+   "description": "The case is marked resolved although the passenger has not received belongings or an explanation.",
+   "share": 1.2,
+   "examples": [
+    "Não relacionado a uma corrida | Eu esqueci minha chave no carro na corrida de sexta-feira, tentei contato com o motorista mas ele não me respondeu e nem atendeu e o caso apareceu como encerrado | Eu precisava muito dessa chave, principalmente pelo chaveiro que está nela é muito importante pra mim, p",
+    "Não relacionado a uma corrida | Eu entrei em contato com o motorista desde o dia 24, informando que tinha esquecido meu fone e ele não me respondeu desde o dia 24, eu esperei as 72h porém eu preciso do meu fone | Ja entrei em contato por este número Ele não responde Apenas visualiza Eu preciso de um"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Support recovery escalation stalls",
+   "description": "Repeated contacts or promised support follow-up produce no recovery update or intervention.",
+   "share": 5.5,
+   "examples": [
+    "Não relacionado a uma corrida | Sim como vai ficar a situação da carteira | Uma carteira com dinheiro e documentos | 92994217686",
+    "Não relacionado a uma corrida | Perdi na sexta uma blusa de frio no carro do motorista que se chama Marcelo Camargo Júnior. Telefone motorista (85)21809996. Desde 20 minutos depois eu faço contato com o motorista e com vocês e não tenho retorno | Estou insistente por ter valor sentimental a blusa de"
+   ]
+  },
+  {
+   "id": 14,
+   "label": "Urgent recovery exceeds support waiting window",
+   "description": "The support waiting period is incompatible with immediate access to keys, medicine, travel documents, or other essential belongings.",
+   "share": 2.1,
+   "examples": [
+    "É uma questão urgente | Meu passaporte | Eu perderei um voo internacional | Na última viagem | Urgente | Urgente | Passaporte | Urgente | 84999723233 | Precisa ligar urgente para o motorista da última viagem | Urgente | Na opção que me deram não consigo falar com ninguém | 72h? Eu preciso viajar ago",
+    "reforçando o aviso de item perdido nessa corrida. Óculos de grau. | 41 99931-5834 | A urgência em avisar o motorista é por ser um item, óculos que pode estragar caso outro usuário sente ou pise ou não entregue, avisei assim que desci do carro. Será que ele já está ciente? | Recebeu essa mensagem? | "
+   ]
+  },
+  {
+   "id": 16,
+   "label": "Uncertain item location needs driver inspection",
+   "description": "The passenger cannot confirm where an item disappeared and asks the driver to check the seats, trunk, or carried equipment.",
+   "share": 3.2,
+   "examples": [
+    "Como contactar al conductor | hoy tomé un Didi pero se canceló ya me había subido a la unidad pero el chofer canceló el servicio y se fue en ese proceso se perdió mi cartera podríamos contactar al chofer para preguntarle dónde está mi cartera para ver si me lo puede regresar | Hoy 27 de octubre a la",
+    "Queria conferir com ele se não larguei uns itens dentro do porta malas, inox | Umas peças de inox | Peças de inox | 38999163058"
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "No reliable way to reach the driver",
+   "root_cause": "Passengers cannot get a working response or contact channel from the driver, whether messages are ignored, calls fail, or the app gives no usable instructions. Provide a dependable recovery contact path and prompt driver responses to lost item reports.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    2,
+    3,
+    6
+   ]
+  },
+  {
+   "label": "Belongings remain outside the passenger's control",
+   "root_cause": "Items remain unrecovered because drivers fail to return them, keep them, leave with them, or cannot confirm where they are. Improve item handling and make driver inspection and return commitments traceable.",
+   "confidence": "high",
+   "cause_ids": [
+    7,
+    9,
+    10,
+    11,
+    16
+   ]
+  },
+  {
+   "label": "Support process does not resolve recovery",
+   "root_cause": "Account access barriers, premature case closure, stalled follow-up, and slow handling of urgent items prevent passengers from completing recovery through support. Keep cases open until the item is confirmed returned and prioritize essential belongings.",
+   "confidence": "high",
+   "cause_ids": [
+    5,
+    12,
+    13,
+    14
+   ]
+  }
+ ],
+ "dropped_causes": [
+  {
+   "id": 4,
+   "label": "Passenger cannot place required phone call",
+   "description": "Lack of calling credit or phone dialing limitations prevents the passenger using the required telephone recovery channel.",
+   "sessions": 6
+  },
+  {
+   "id": 8,
+   "label": "Driver conditions return on payment",
+   "description": "The driver demands money before returning the passenger's belongings.",
+   "sessions": 9
+  },
+  {
+   "id": 15,
+   "label": "Subsequent passenger may have taken item",
+   "description": "The requester suspects a later passenger took the item and needs investigation or identity information.",
+   "sessions": 4
+  },
+  {
+   "id": 17,
+   "label": "Wrong belongings collected at exit",
+   "description": "A passenger accidentally takes someone else's item and needs to arrange its return.",
+   "sessions": 7
+  },
+  {
+   "id": 18,
+   "label": "Unsafe driver identity obstructs recovery contact",
+   "description": "A mismatch between the driver and profile photo makes the passenger afraid to contact the driver for recovery.",
+   "sessions": 2
+  },
+  {
+   "id": 19,
+   "label": "Driver withholds cash fare change",
+   "description": "The driver keeps the passenger's cash fare change instead of returning the balance.",
+   "residual": true,
+   "sessions": 4
+  }
+ ],
+ "added_by_residual_pass": [
+  "Driver withholds cash fare change"
+ ],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}

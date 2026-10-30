@@ -1,0 +1,257 @@
+{
+ "segment": "mobility_customer",
+ "cr": "customer complains about cancellation fee",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:31 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 7.8,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Driver waits at wrong pickup point",
+   "description": "The driver waits somewhere other than the confirmed pickup address and records a no-show instead of reaching the passenger.",
+   "share": 8.1,
+   "examples": [
+    "essa taxa de cancelamento aí está errada,o motorista ficou do outro lado da avenida movimentada querendo que eu atravessasse a rua com um carrinho cheio de compras | Samara | essa taxa de cancelamento aí está errada,o motorista ficou do outro lado da avenida movimentada querendo que eu atravessasse ",
+    "Sin relación con una renta | Bot de mierda | Necesito un Asesor | Necesito un asesor | con Sofia, mira que me cobraron 3.000 pesos por no coger la moto pero la moto ni llegó al punto de encuentro, estaba super lejos, me fuí a buscarla y se fue | Pues no tengo esa información | El punto de encuentro "
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Driver never approaches pickup",
+   "description": "The driver stays stationary, moves away or falsely marks arrival, forcing the passenger to cancel after excessive waiting.",
+   "share": 11.5,
+   "examples": [
+    ", fui cobrado tava de cancelamento mas o motorisra não chegou até mim",
+    "Fui cobrada uma taxa sendo que o motorista começou sem chegar no local | Não foi essa não | Foi outra | Não to conseguindo selecionar | Foi uma tava de cancelamento"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Driver leaves while passenger approaches",
+   "description": "The driver cancels or drives away while the passenger is approaching or before the allowed boarding wait expires.",
+   "share": 7.8,
+   "examples": [
+    "O motorista cancelou minha viajem | E eu estou sendo cobrada pela taxa de cancelamento | Sendo que eu pedi para ele esperar | Mas avisei a ele que estava chegando",
+    "Quando cheguei no carro o motorista n quis esperar pegou outra corrida | Ele ficou esperando o tempo passar pr ame cobrar a taxa"
+   ]
+  },
+  {
+   "id": 4,
+   "label": "Driver cancels despite passenger being present",
+   "description": "The driver arbitrarily cancels or refuses boarding despite seeing the passenger ready at pickup.",
+   "share": 4.2,
+   "examples": [
+    "O motorista cancelou a corrida sem eu se quer entrar no carro, e me cobrou a taxa de cancelamento",
+    "Aline | Chamei 99 para mim o motorista aceitou passou na minha frente e cancelou corrida e 99 tá cobrando dizendo que não apareci no local | Ainda motorista olhou pra minha casa dei a mão e passou reto ele | Não vou pagar taxa de cancelamento"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Driver refuses destination or offered fare",
+   "description": "The driver refuses the destination or app fare and leaves cancellation responsibility with the passenger.",
+   "share": 1.5,
+   "examples": [
+    "Você poderia descrever o que aconteceu?: Motorista cancelou a viagem.na minha frente por conta do destino",
+    "O o motorista disse que estava indo para Jardim São Paulo e aceitou a corrida achando que era para lá só que era para São João São Paulo Camaragibe ele achou que era para Jardim São Paulo Recife | O motorista aceitou minha corrida achando que era para Jardim São Paulo só que era para São João São Pa"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Driver demands cash or extra payment",
+   "description": "The driver refuses the booked payment method or demands an additional payment before providing the ride.",
+   "share": 2.8,
+   "examples": [
+    "El conductor quería cobrarme dinero demás en efectivo a pesar de que le dije que eso no marca la app, solo porque él tiene problema con su tarjeta y mi método de pago fue tarjeta, él tuvo el error y me hizo perder tiempo y ahora dinero!!!! | El conductor quería cobrarme dinero demás en efectivo a pe",
+    "Cómo es posibleque me obliguén a pagar cuando el conductor amenaza por no llevar me porque no tengo efectivo y lo tengo pgo con tarjeta | Nicol | El conductor se negó a llevarme y amenaza porque pago con tarjeta | Además me cobra didi po 3.000? | Le digo que por qué acepta si no me va a llevar, y me"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Driver refuses passenger needs or belongings",
+   "description": "The driver refuses pets, children, companions, luggage or use of available seats and the resulting cancellation is billed to the passenger.",
+   "share": 6.3,
+   "examples": [
+    ", acabo de solicitar el vehículo, pero era para 4 personas y no nos quiso atender argumentando que solo llevaba a 3 pasajeros, y no quiso tomar el viaje | Solo para reportar a un conductor que nos nos quizo tomar un viaje para 4 personas, siendo la capacidad aceptada argumentando que solo subía 3 pe",
+    "Cancelane | El conductor no quiso cargar el carrizo de lanossajrra | El carrito de la pasajera | Cancelalo así pudo otro"
+   ]
+  },
+  {
+   "id": 8,
+   "label": "Driver discriminates against passenger",
+   "description": "The driver refuses service because of disability, religion, nationality, gender identity or perceived appearance.",
+   "share": 1.9,
+   "examples": [
+    "Você poderia descrever o que aconteceu?: O motorista falou que eu era pesado demais não quis levar eu e minha família",
+    "O motorista cancelou a corrida | Por ser venezuelanos | Não quiz levar nos | E ainda cobro a corrida"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Driver behaves abusively or unsafely",
+   "description": "The passenger declines the ride because of threats, insults, suspected intoxication or other unsafe driver conduct.",
+   "share": 5.5,
+   "examples": [
+    "ESTOU sendo cobrado Cancelamento O motorista está alcoolizado Falando palavrão Fiquei com medo",
+    "Motorista foi rude | E me cobrou | Não vou usar esse AP até retira"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Vehicle or driver differs from registration",
+   "description": "A different driver, vehicle, plate or transport category arrives, preventing safe acceptance of the booked ride.",
+   "share": 2.2,
+   "examples": [
+    "O motorista não era o mesmo da foto , não quis embarca | E fui cobrada a taxa | Ainda terei que pagar uma taxa , por não querer embarca com um motorista sem ser o da foto ? | Affs",
+    "Motorista chegou com outro veículo e pedi para ele cancelar ele não cancelou e foi embora | Não consigo pedir outra moto | Agora cancelou e tenho que pagar taxa"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Vehicle equipment prevents safe boarding",
+   "description": "Damaged helmets, unsuitable motorcycle equipment, locked doors or other vehicle condition prevents boarding.",
+   "share": 2.3,
+   "examples": [
+    "O motorista chegou até mim eu ia embarcar ele disse que não poderia me levar pois o pé eu dele furou Cancelou e gerou taxa para mim? | Mas ainda tá pendente",
+    "Não embarquei pois o motorista estava sem o capacete do carona"
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Driver refuses service without explanation",
+   "description": "The driver says they will not perform the ride and often pressures the passenger to cancel without giving a specific reason.",
+   "share": 12.7,
+   "examples": [
+    ", tudo bem? | O motorista me pediu para cancelar e vocês estão me cobrando a taxa",
+    "O motorista cancelou e tá me cobrando | Pode me ajudar?"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Completed ride recorded as canceled",
+   "description": "A ride actually taken is mistakenly recorded as canceled, generating a cancellation charge or incorrect debt.",
+   "share": 2.6,
+   "examples": [
+    "O motorista fez a corrida, mas cancelou no aplicativo. Me deixando a taxa para pagar | A corrida foi paga em dinheiro | Mas fiquei com taxa para pagar | Como vcs mantém um motorista desse? | Solicito o cancelamento dessa taxa. Sendo que paguei a corrida em espécie | Desonesto",
+    "Você poderia descrever o que aconteceu?: Motorista cancelou a corrida quando ja tinha chegado ao destino"
+   ]
+  },
+  {
+   "id": 14,
+   "label": "Approved waiver remains outstanding",
+   "description": "Support has approved cancellation-fee removal but the charge remains pending or is added to another ride.",
+   "share": 2.6,
+   "examples": [
+    "Alteração no valor ? | O valor foi isento | Mas na análise eu fiquei isento desse valor | Eu fiz um cancelamento, e foi aplicado uma taxa, mas fiz a verificação, foi isento do valor, porém ainda essa tava de 6.1 ainda consta.",
+    "Mais uma vez, taxaa sendo cobrada n tem nada haver. Terceira vez que venho reclamar | Vem acontecendo uma cobrança recorrente de 6 e 4 reais. Basicamente eu entro em contato com suporte, vocês retiram a taxa e depois que faço a corrida ela é cobrada novamente pela 4° tô com esse problema | Tá aconte"
+   ]
+  },
+  {
+   "id": 15,
+   "label": "Paid fee or fare remains outstanding",
+   "description": "An already paid cancellation fee or fare is not reconciled and is demanded again or blocks new bookings.",
+   "share": 6.6,
+   "examples": [
+    "Eu efetuei o pagamento e estão me cobrando de novo | Eu fiz pix | Não cartão | Estão me cobrando e já fiz o pagamento",
+    "Fiz essa corrida fiz o pagamento via Pix e tá constando aqui corrida não paga | No Pix copiei e fiz o pagamento | Só um momento | Tenho que aguardar nessa página ou posso sair | Estou aguardando | Temo como tirar essa opção de pagar primeiro pra depois chamar??"
+   ]
+  },
+  {
+   "id": 16,
+   "label": "Canceled booking payment not fully refunded",
+   "description": "The original prepaid fare or card charge remains captured, or an approved refund is missing or incomplete after cancellation.",
+   "share": 2.4,
+   "examples": [
+    "cobrança não reembolsada totalmente | tatianne, tudo bem? | pedi uma corrida no Pop, que constava no valor de R$ 24,05. por motivos maiores, tive que cancelar a corrida e foi cobrada uma taxa de cancelamento, a qual não foi contestada por minha pessoa em nenhum momento. o problema é que me fizeram o",
+    "Central de Ajuda Meu motorista foi rude ou não profissional Quero denunciar o comportamento do motorista relacionado a: Outros Você poderia descrever o que aconteceu? O motorista foi extremamente rude pois tinha chego dois motorista de uma vez e a própria 99 disse que me devolveria cinco reais devid"
+   ]
+  },
+  {
+   "id": 17,
+   "label": "Passenger cancels early or changes plans",
+   "description": "The passenger cancels promptly or before driver arrival because the ride is no longer needed but disputes the applicable cancellation window.",
+   "share": 1.6,
+   "examples": [
+    "Sin relación con un viaje | Me cobraron una tarifa por cancelar el viaje dos minutos después de aceptarlo, tengo evidencia de que solo fueron 2 minutos | Me quieres cobrar más de la mitad de lo que me iba a salir el viaje",
+    ",ontem pedi um carro da 99 e a corrida deu 24,00 e qndo finalizouvele me cobrou 28 | Eu cancelei essa corrida 5 minutos antes do motorista chegar, eu não vou pagar porra nenhuma de taxa de cancelamento não | Obreiro cancelar essa mercadoria de aplicativo | Eu já tenho o aplicativo da Uber,pra mim nã"
+   ]
+  },
+  {
+   "id": 18,
+   "label": "App failure or unrecognized cancellation",
+   "description": "An app freeze, connectivity problem, unexpected replacement driver or unrecognized booking creates a cancellation the passenger did not knowingly initiate.",
+   "share": 4.4,
+   "examples": [
+    "MOTORISTA PEDIU OARA CANCELAR POR QUE ESTÁ CHOVENDO E O APP DELE ESTAVA TRAVANDO | MEU DEUS QUE DIFICULDADE | MOTORISTA PEDIU PARA CANCELAR POR QUE COMEÇOU A CHOVER E ELE O CEKULAR DELE DESCARREGOU | MUITO DIFÍCIL | TUDO COBRAM TAXA, MAS NÃO RESOLVEM NADA",
+    "O motorista cancelou a corrida e ficou a taxa pra mim pagar. Mas foi ele que cancelou | E ta que foi as 02 época da manhã, eu tenho criança pequena nunca sai esse horário"
+   ]
+  },
+  {
+   "id": 19,
+   "label": "Unexpected fare adjustment after payment",
+   "description": "The final fare, route adjustment or extra amount exceeds the quoted or prepaid price without an understood explanation.",
+   "share": 5.2,
+   "examples": [
+    "El chófer me cobro de más | Me cobro 4900 y el viaje salia 3500",
+    "Paguei a corrida no Pix se aumentou problema da 99 não acho justo esse aumento. | Paguei a corrida no Pix se aumentou problema da 99 não acho justo esse aumento."
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "Pickup or ride service fails",
+   "root_cause": "Drivers fail to reach the agreed pickup or refuse, abandon, or make boarding unsafe, and the resulting cancellation is charged to the passenger. Verify arrival and service events before assigning fees, and address driver conduct or pickup accuracy.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "label": "Unexpected charge or unresolved balance",
+   "root_cause": "Trip status, cancellation timing, payment reconciliation, refunds, or fare adjustments leave customers with disputed charges or balances. Audit trip and payment records together, then correct the charge and apply any approved credit or refund.",
+   "confidence": "high",
+   "cause_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  }
+ ],
+ "dropped_causes": [
+  {
+   "id": 20,
+   "label": "Passenger cannot settle pending balance",
+   "description": "The passenger needs payment instructions or a supported way to pay an acknowledged outstanding charge.",
+   "sessions": 9
+  }
+ ],
+ "added_by_residual_pass": [],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}

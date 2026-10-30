@@ -1,0 +1,247 @@
+{
+ "segment": "mobility_customer",
+ "cr": "extra charge for the same ride (online payment method)",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:32 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 9.4,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Driver collects cash despite online payment",
+   "description": "The driver collects cash or a personal transfer for a fare already charged online, without a more specific explanation.",
+   "share": 15.6,
+   "examples": [
+    "Ontem eu chamei o 99 pra ir até o mercado GB Mix e paguei a minha corrida on-line e não tinha taxa de cancelamento e ele me cobrou taxa de cancelamento e mais a corrida | Ontem o motorista me cobrou o valor acima do que eu já tinha pago on-line | Ele não me cobrou a taxa de cancelamento ele me cobro",
+    "Essa corrida foi paga no pix antecipada e o motorista cobrou novamente | Eu paguei a corrida duas vezes tenho provas"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Driver claims online funds never arrived",
+   "description": "The driver says an online payment is missing or under analysis and demands another payment despite the passenger's payment confirmation.",
+   "share": 7.2,
+   "examples": [
+    "essa corrida também foi paga 2x. | O motorista cobrou 2x para levar minha prima até o endereço. Eu paguei via pix e ela pagou no final da viagem em dinheiro | Ele disse que o app estava travando e não recebeu a informação se já estava pago | como eu ia saber que ele cobraria 2x?",
+    "Não relacionado a uma corrida | a corrida já estava paga pelo saldo da minha conta, mas o motorista alegou que o pagamento estava em análise e me ameaçou dizendo que me levaria à delegacia caso eu não pagasse em dinheiro. Por me sentir pressionado, paguei novamente. Solicito a análise urgente do cas"
+   ]
+  },
+  {
+   "id": 4,
+   "label": "Passenger overlooks selected online payment",
+   "description": "The passenger forgets the stored card or online method and voluntarily pays the driver again outside the app.",
+   "share": 4.2,
+   "examples": [
+    "Eu paguei dinheiro no carro não sabia que era online | Paguei 45 no carro pra ele antes de3 descer",
+    "Agora a pouco fiz uma corrida e coloquei no débito por engano | Mas eu faria o pagamento em dinheiro e o motorista aceitou o dinheiro e disse que colocaria no app | Preciso de uma resposta | Não irei ficar no prejuízo"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Failed online payment replaced with cash",
+   "description": "Insufficient card limit, account balance or an unavailable wallet leads to cash payment that does not settle the app's online debt.",
+   "share": 6.7,
+   "examples": [
+    "Eu vou ter que pagar a corrida duas vezes | Eu paguei em dinheiro | Eu paguei minha corrida em dinheiro porque meu cartão não | Aí eu tenho que pagar duas vezes | Você pode confirmar com o motorista | Eu não quero reembolso | Eu só tô explicando que eu já paguei",
+    "Sin relación con un viaje | difi me esta reclamando el pago de 3700 pesos. Y yo lo hice directo al mp del conductor.ya que me otorgaron nueva tarjeta de mp y no la registre | Ya lo copio | Nuestra señora del buen viaje 582 a juan manuel de rosas 85 de moron | 15 25 hs | Tengo fibromialgia, tardo rn "
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Payment method change fails to synchronize",
+   "description": "A requested switch between online payment and cash is not reflected consistently between the app and driver, leaving a charge or debt.",
+   "share": 2.8,
+   "examples": [
+    "Não consigo chamar corrida,paguei em dinheiro. Não quero reembolso,apenas chamar corrida. Absurdo,primeira vez que ocorre isso em anos | ,Não consigo chamar corrida,paguei em dinheiro.Pois alterei o método antes do inicio da corrida. Não quero reembolso,apenas chamar corrida. Absurdo,primeira vez qu",
+    "cómo estás | siempre pago en efectivo | y solicito un viaje u no me deja la opción de efectivo"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Driver marks received payment as unpaid",
+   "description": "The driver fails to acknowledge cash or a personal transfer and reports the fare as unpaid.",
+   "share": 20.6,
+   "examples": [
+    ", eu paguei sim ele que colocou que não paguei isso tá errado | Dei os 26,00 por Pix e o restante em dinheiro | Agora preciso ir na faculdade estou atrasado",
+    "Cobrou a mais do valor | Paguei em dinheiro | E o dinheiro vou tem que paga novamente?"
+   ]
+  },
+  {
+   "id": 8,
+   "label": "Online payment remains pending in app",
+   "description": "A completed card, wallet or app Pix payment is not recognized and the app continues demanding payment.",
+   "share": 6.5,
+   "examples": [
+    "Eu paguei essa corrida no Pix no dia da viagem não estou entendo a cobrança sendo que o motorista ainda foi muito mau educado parou longe do endereço eu estando com duas crianças eu que tive que ir procurar o carro dele e quando eu o encontrei ele estava dormindo no carro | No Pix mesmo até porque a",
+    "A última corrida foi paga com sucesso | Motorista não deu baixa? | Oq aconteceu, que chegou mensagem que eu não tinha pago | Eu, paguei a corrida no pix, antes de embarcar no carro , estou falando da corrida da rodoviária , para setor Buena vista , dia 24 sábado"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Fare remainder paid outside app stays due",
+   "description": "The passenger pays a fare difference or split-payment remainder directly to the driver but that portion remains due in the app.",
+   "share": 5.9,
+   "examples": [
+    "Eu paguei a corrida metade em Pix, e o resto do valor em dinheiro! Porém a taxa pra eu pagar, novamente ainda está no meu Uber! | Eu paguei a corrida metade em Pix, e o resto do valor em dinheiro! Porém a taxa pra eu pagar, novamente ainda está no meu Uber! | Preciso solicitar meu Uber e não estou c",
+    "Paguei a diferença em dinheiro e está falando que estou devendo | A taxa será removida ?"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Driver withholds change or promised wallet credit",
+   "description": "The driver accepts more than the fare and fails to return change or the promised digital wallet credit.",
+   "share": 1.9,
+   "examples": [
+    "Minha corrida foi finalizada, e eu não recebir meu troco, pagamento foi em dinheiro. O motorista disse que colocaria no aplicativo o troco, e não aconteceu isso. | Chegou Aqui o reembolso, | A ajuda foi muito boa | Mais por que o motorista foi notificado",
+    "Paguei em dinheiro a mais ainda"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Final fare exceeds prepaid quoted amount",
+   "description": "The final fare is recalculated above the prepaid quote, leaving an unexplained or disputed difference after the trip.",
+   "share": 4.6,
+   "examples": [
+    ". O valor ficou mais caro e o motista pediu para eu reportar a diferença | Já paga no cartão | Solicitar reembolso | Da diferença | , Marcus | Gostaria de solicitar o reembolso do valor que ficou a mais. | Estou reportando | Eu já tinha deixado a corrida paga | E fui surpreendida.",
+    "Estacobrança está errada | Eu paguei o valor e está cobrando a mais. Paguei com o app da 99 e ao finalizar alterou o valor | Nenhuma pq não fui cobrada na corrida. Foi depois w finalizou q apareceu pra mim essa diferença | O valor q estava dando eu paguei antes pelo app da99 | E depois de finalizar "
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Driver leaves trip running after dropoff",
+   "description": "The driver fails to close the ride at dropoff and the ongoing trip increases the fare.",
+   "share": 1.5,
+   "examples": [
+    "Não relacionado a uma corrida | Dinheiro | Deu ele 9,00 reais não finalizou a corrida",
+    "Corrida paga e não finalizou | Paguei pelo Pix pessoal mais não foi finalizada a corrida | Reembolso para saldo 99pay"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Driver demands unauthorized additional fees",
+   "description": "The driver demands off-app money for fuel, rain, or another surcharge beyond the agreed fare.",
+   "share": 3.4,
+   "examples": [
+    "Desrespeitoso pois ele parou duas vezes e me deixou lá sozinha | Sim, | Muito mas como eu fico no prejuízo? | iarley tudo bem , tomei chuva com o motorista hoje e fui cobrada duas vezes fora isso paramos duas vezes para abastecer | Não posso ficar no prejuízo | Quero meu reembolso imediatamente | Eu",
+    "El conductor de cobro de más | Pues pedí taxi, el taxímetro dio un monto más bajo y cobró más"
+   ]
+  },
+  {
+   "id": 14,
+   "label": "Canceled or uncompleted trip still charged",
+   "description": "A canceled, abandoned, broken-down or never-taken ride remains charged instead of being canceled or refunded.",
+   "share": 3.6,
+   "examples": [
+    "Paguei o pix com o valor da corrida com outro celular, foi realizado o desconto mais não fez a corrida | 16,30 | Solicitei a corrida paguei com o código por outro celular e não concluiu a solicitação da corrida | Segue o comprovante | Onde esta o valor? | Foi feito por outra pessoa o valor só pix pr",
+    "Motorista não iniciou a corrida | Fui cobrada pela corrida em dinheiro | Reembolso para saldo 99pay | Não solicitei cupom de desconto | Adriana | O robô solicitou sozinho um cupom de desconto que eu não pedi | Solicitei reembolso para saldo 99pay | O robô decidiu por mim | Me ajuda | Solicitei reemb"
+   ]
+  },
+  {
+   "id": 15,
+   "label": "Repeated online debits for one ride",
+   "description": "The card or wallet receives multiple processed debits for the same ride without an additional payment to the driver.",
+   "share": 2.7,
+   "examples": [
+    "Não relacionado a uma corrida | Fiz pix duas vezes para a mesma corrida | 8,50 | Fiz pix duas vezes para a mesma corrida | Na verdade fiz pix e não usei para a corrida Valor de 8,50 | As duas ultimas corridas foram de agora Esse valor de 8,50 não foi dd nenhuma delas",
+    "Sin relación con un viaje | Esq pedí un viaje q pague 111 por mi cuenta móvil pero me cobraron el doble | El motivo de mi información esq pedí un viaje en didi el problema esq me cobraron doble pague 111 y e cobraron dos veces | Es un problema k deben de solucionar | un gusto | No es la primera ves "
+   ]
+  },
+  {
+   "id": 16,
+   "label": "Promised debt removal or refund missing",
+   "description": "Support promises a refund or removal of an already disputed debt but the credit or correction never appears.",
+   "share": 1.0,
+   "examples": [
+    "Vcs não resolveram o problema | Continua me cobrando a taxa | Nem cartão eu uso Pago sempre no dinheiro ou pix | Resolva meu problema Uma coisa fácil que vcs não faz | Eu paguei antecipado e vcs vem me cobrar a mais Tá de sacanagem | Porá eu não uso cartao | NAO USO CARTAO RESOLVAM MEU PROBLEMA | Es",
+    "Já expliquei mil vezes. Mas vamos lá. O motorista cancelou a corrida e agora me cobram uma taxa de 5 reais que não vou pagar. Eu não dei motivos para o cancelamento | <|order_select|> | Tem uma taxa de Cancelamento sendo cobrada de mim, porém foi o motorista que cancelou. Ele quis. Eu estava no luga"
+   ]
+  },
+  {
+   "id": 17,
+   "label": "Driver route or destination changes increase fare",
+   "description": "The driver deviates from the requested route, skips a stop or ends at the wrong destination and an extra amount is charged.",
+   "share": 2.4,
+   "examples": [
+    "O motorista né deixou aste do destino | E ainda tive que paga e chamar outro pra mim ir | O motorista não né deixou aste do local | E aí vou te que pagar não é justo",
+    "Eu coloquei uma rota pra EBF que é uma escola de vigilante e há somente uma sem Salvador e a rota foi pra um outro local completamente diferente onde nem havia sentido com o solicitado"
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "Paid rides remain as outstanding debt",
+   "root_cause": "The app or driver record fails to reflect completed online, cash, or split payments, so the user sees a balance and may be blocked from booking. Reconcile payment records with trip status and clear the debt once a valid payment is confirmed.",
+   "confidence": "high",
+   "cause_ids": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "label": "A single ride triggers duplicate payment",
+   "root_cause": "The passenger pays through the app and also pays the driver, forgets the selected online method, or is charged more than once electronically. Prevent second collections after online payment and refund verified duplicate charges.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    4,
+    15
+   ]
+  },
+  {
+   "label": "Unexpected fare increases or lost change",
+   "root_cause": "The final amount rises through recalculation, unauthorized fees, route changes, or change the driver keeps. Compare the final fare with the quote and route, block unauthorized surcharges, and return any missing change.",
+   "confidence": "medium",
+   "cause_ids": [
+    10,
+    11,
+    13,
+    17
+   ]
+  },
+  {
+   "label": "Ride disruptions leave charges unresolved",
+   "root_cause": "A ride left active or canceled without completion can still generate a fare, and later promised corrections may not reach the account. Close or cancel disrupted rides accurately and ensure the resulting refund or debt correction is applied.",
+   "confidence": "medium",
+   "cause_ids": [
+    12,
+    14,
+    16
+   ]
+  }
+ ],
+ "dropped_causes": [
+  {
+   "id": 3,
+   "label": "Driver refuses the selected online method",
+   "description": "The driver refuses card or online payment and insists on cash although the app retains the original online charge.",
+   "sessions": 9
+  },
+  {
+   "id": 18,
+   "label": "Driver-caused waiting-time surcharge",
+   "description": "A waiting or start-time fee is added when the driver arrives late, starts the trip late, or records waiting before reaching the passenger.",
+   "residual": true,
+   "sessions": 4
+  }
+ ],
+ "added_by_residual_pass": [
+  "Driver-caused waiting-time surcharge"
+ ],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}
