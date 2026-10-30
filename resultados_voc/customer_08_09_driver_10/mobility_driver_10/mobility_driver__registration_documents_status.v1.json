@@ -1,0 +1,213 @@
+{
+ "segment": "mobility_driver",
+ "cr": "registration documents status",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:52 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 26.6,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Document image rejected by validation",
+   "description": "Automated checks reject otherwise valid identity, license, vehicle, or insurance images because of legibility, framing, lighting, glare, format, or data extraction mismatches.",
+   "share": 22.9,
+   "examples": [
+    "Sin relación con un viaje | querría saber porque no me aceptaban la licencia ? | Es que estoy intentando inscribirme en la app hace días | Mi nombre es Elizabeth Rodriguez | Muchas",
+    "Sin relación con un viaje | Me comentaron que teniendo lo demás en regla si se podía trabajar | Que tal Jhon,soy Ruben | Mira ya subí toda mi documentacion | Pero tengo un tema con lo del número de seguro | Ya tomé varias fotos, el documento ya es algo viejo | Pero salen bien | Y ya los demás docume"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Document does not meet local rules",
+   "description": "The submitted credential is rejected because its type, issuing jurisdiction, category, validity extension, or required endorsement does not satisfy the market's registration rules.",
+   "share": 2.9,
+   "examples": [
+    "Não relacionado a uma corrida | Aí é print da minha cnh estou esperando chega a ear por enquanto só está na carteira pq fiz agora recente | , quero saber pq não aprova minha cnh tenho ab já com ear e nada",
+    "Sin relación con un viaje | no me aceptan la licencia no le puedo sacar foto físicamente porque me robaron la billetera con los documentos y licencia dentro solo la tengo desde galería en foto | Cómo lo puedo resolver | Quiero usar la app para hacer viajes pero no me aceptan la licencia como le dice"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Document review remains pending",
+   "description": "A submitted credential or profile photo stays in review beyond the stated processing window, leaving the driver unable to complete registration or go online.",
+   "share": 8.9,
+   "examples": [
+    "Não relacionado a uma corrida | A foto até agora tá pendente e pra eu fazer as corridas tem q aprovar a foto | Então eu coloquei os documentos tudo pra fazer as corridas só que até agora não aprovou a foto",
+    "Liberação de um veículo por documentação | Preciso falar com um atendente sobre esse assunto | Meu carro novo não é aprovado. Queria saber o motivo | Já tá fazendo quase 1 mês e nada | Só um segundo. Já reclamei sobre isso mas ninguém me dá uma explicação | Fica todo o tempo em validando o veículo |"
+   ]
+  },
+  {
+   "id": 4,
+   "label": "Upload flow blocks submission",
+   "description": "The app gives an upload error, omits the required field or file format option, fails to open the camera, or otherwise prevents the driver from submitting a document.",
+   "share": 7.0,
+   "examples": [
+    "Não relacionado a uma corrida | Meu carro é 2021 | Ronaldo | O documento deu ? | Na hora do cadastro não sei oque deu mas bugou e não consegui mandar o documento do carro e nem minha cnh",
+    "Sin relación con un viaje | Quiero subir mi rfc para que rebusca al 10. | Pero me equivoque al subir el pdf | buen dia | Me salio un mensaje que si subo mi rfc baja de 33 al 10 | Pero lo subí en pdf y me equivoque quiero mandarlo correcto | Me dijo que fuera a actualizar documentos | Como puedo hace"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Upload limit prevents correction",
+   "description": "The driver reaches the maximum upload attempts or cannot replace a rejected or incorrect file, so the registration remains stuck without a resubmission path.",
+   "share": 3.1,
+   "examples": [
+    "Não relacionado a uma corrida | Meu limite de foto foi atingido oq devo fazer",
+    "Não relacionado a uma corrida | td bem estou enviando minha foto para você fazer o oplood para que eu consiga fazer meu cadastro como motorista já fiz meu cadastro porém a CNH foi bloqueada por excesso de oplood não é mais possível enviar documentos gostaria da liberação pra oplood para mandar os do"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Face match or selfie check fails",
+   "description": "The profile selfie or facial liveness check is rejected because the camera capture, pose, appearance, or match against the identity document fails validation.",
+   "share": 4.7,
+   "examples": [
+    "Sin relación con una renta | No he podido tomarme la foto bien ya que no me aprueban ese punto | O no se cómo tengo que tomarla",
+    "Não relacionado a uma corrida | Preciso de ajuda pra envia foto do rosto | Não to conseguindo refazer a foto | Pode me ajudar"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Personal data mismatch or duplicate",
+   "description": "Registration is blocked because an identifier such as CPF, CURP, DNI, name, or birth date is flagged as already used or inconsistent with the submitted record.",
+   "share": 3.8,
+   "examples": [
+    "Sin relación con un viaje | Envio mis datos pero no me los acepta | Soy contreras no contretas quedo mal puesto mi apellido | Puede ser ese el error por lo que no me acepte mis documentos | Eso no era | E hecho todo corrigiendo cada foto y de igual manera no los aceptan | No me deja eliminarla por e",
+    "Sin relación con un viaje | Me rechaza el registro. Que dato no coincide? | Puedes decirme que dato esta erroneo"
+   ]
+  },
+  {
+   "id": 8,
+   "label": "Existing account blocks registration",
+   "description": "A prior, inaccessible, hacked, or blocked account is associated with the driver's identity or phone, preventing a new registration or account recovery.",
+   "share": 3.5,
+   "examples": [
+    "Sin relación con un viaje | , equipo de soporte de Didi punto y aparte hace aproximadamente dos meses intenté registrarme como conductor y posteriormente mi cuenta quedó bloqueada permanentemente no recibí una explicación clara sobre el motivo del bloqueo punto por ello solicito su apoyo para conoce",
+    "Não relacionado a uma corrida | Tenho um problema com outra conta nao consigo finalizar cadastro | Boa noit | Tenho um problema de cadastro em outra conta, nao consigo selecionar bicicleta e sou a enviar cnh, então nao consigo concluir o cadastro faz anos | Não sei se é meu CPF ou número mas estou t"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Vehicle eligibility or category mismatch",
+   "description": "The vehicle is rejected or the requested service category stays unavailable because its model year, body type, plate, city, ownership, or vehicle class does not match eligibility rules.",
+   "share": 2.8,
+   "examples": [
+    "Sin relación con un viaje | Necesito que me autoricen la cédula de mi vehículo ya que es una Kangoo confort de 5 asientos y el sistema me toma como furgón de 2 asientos | Muchísimas . Espero una respuesta favorable. Que tengan lindo día | Por medio de una llamada estária bien",
+    "Sin relación con un viaje | No me habilita por que es taxi"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Vehicle document cannot be matched",
+   "description": "The vehicle credential is rejected because it is missing, provisional or digital, issued to another owner or fleet, associated with a different plate, or does not match the vehicle record.",
+   "share": 2.3,
+   "examples": [
+    "Não relacionado a uma corrida | A moto 2023 , vocês quer CRLV mais atualizado | É isso?",
+    "Não relacionado a uma corrida | Perdi minha CNH física, só tenho a digital | , Welida"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Insurance or vehicle status is outdated",
+   "description": "A renewed or currently valid insurance, inspection, tax, or circulation status is not reflected in the app, so the vehicle is blocked or its credential is rejected.",
+   "share": 2.2,
+   "examples": [
+    "Sin relación con una renta | No me ha aceptado el soat",
+    "Sin relación con una renta | Me puedes colaborar con la subida de mi soat para poder conectarme | Me podrías colaborar | Subiendo el soat | no me hagan ese daño | Necesito trabajar | colaborame | Si yo se que es una firma | Pero por eso estoy escribiendo para que sepan que ya esta activo y ustedes m"
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Profile record requires manual correction",
+   "description": "An account field or driver profile is stale or incorrectly recorded, such as a license endorsement, document assignment, vehicle linkage, or driver data that the app will not let the user update.",
+   "share": 3.4,
+   "examples": [
+    "Não relacionado a uma corrida | Onde altero o CPF de cadastro?",
+    "Sin relación con una renta | Mira quiero actulizar mis datos porque cuando cree la cuenta puse otra licencia que no es la mía porque no estaba al día pero ya tengo toda mis datos en regla y no me los acepta tú me los puedes actualizar | Tengo la licencia cédula tarjeta de propiedad y papeles y coinc"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Required credential is missing",
+   "description": "The driver cannot finish registration because a locally required license, permit, social security credential, endorsement, or other document is unavailable or not yet issued.",
+   "share": 1.4,
+   "examples": [
+    "Sin relación con un viaje | Buen día, me están pidiendo cargar documentos y noce que es lo que me está faltando para poder seguir trabajando con Didi | Buen día, me están pidiendo cargar documentos y noce que es lo que me está faltando para poder seguir trabajando con Didi | Me podría responder la c",
+    "Sin relación con un viaje | Ya envié mis documentos pero mi licencia de conducir pero es federal | Señorita ya envié mis documentos Pero mi licencia es Federal tipo b es igual de conductor y me faltaría lo del SAT no sé si se lo pudiera dejar pendiente"
+   ]
+  },
+  {
+   "id": 14,
+   "label": "Eligibility rule conflicts with driver activity",
+   "description": "A registration rule such as minimum age, license category, endorsement, or driver versus delivery mode conflicts with the driver's actual qualifications or intended service.",
+   "share": 1.7,
+   "examples": [
+    "Sin relación con un viaje | Necesito ayuda para activar mi cuenta | Si pero me los han rechazado dos veces bueno la licencia de conducir.... y noto ese detalle que solicitan licencia B C D y para motocicleta es tipo A no se si eso estará influyendo en la aprobación,",
+    "Não relacionado a uma corrida | Meu CPF e 16718563765 | , tudo sim só fica melhor se você disser que vai conseguir me liberar para trabalhar | 16718563765 | Mas até para a entrega | Liberaram meu primo e ele só tinha uma semana de carteira | Eu estou a quase 1 ano tentando"
+   ]
+  },
+  {
+   "id": 15,
+   "label": "Registration app state is stuck",
+   "description": "The registration or account screen remains blocked, loops, or shows contradictory approval status despite completed submissions, preventing the driver from accessing the app or connecting.",
+   "share": 2.8,
+   "examples": [
+    "entonces elimino la cuenta y vuelvo a iniciar sesión | espero poder resolverlo",
+    "Sin relación con un viaje | Buenas | Hace 3 semanas | Que intento dar de alta la aplicación y no me deja | Quuero ver cuáles son los motivos | 32113366 es mi dni | Mi número es 543412103516 | Me llamo Carlos Ezequiel sisto"
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "Document checks block registration",
+   "root_cause": "Drivers cannot get required credentials accepted or submitted, including image checks, local credential rules, selfie verification, and upload retries. Improve the specific rejection guidance and restore a clear path to correct or supply the required document.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    13,
+    14
+   ]
+  },
+  {
+   "label": "Registration identity remains blocked",
+   "root_cause": "Identity conflicts, prior account associations, stale profile fields, and stuck registration screens prevent drivers from completing or recovering enrollment. Provide a reliable identity correction and account recovery path that allows users to update the affected profile data.",
+   "confidence": "high",
+   "cause_ids": [
+    7,
+    8,
+    12,
+    15
+   ]
+  },
+  {
+   "label": "Vehicle review does not enable work",
+   "root_cause": "Vehicle checks remain pending or reject eligibility, document matching, or current insurance and status information, leaving drivers unable to use the vehicle. Clarify vehicle requirements and ensure valid documents and status changes are reflected promptly in the account.",
+   "confidence": "high",
+   "cause_ids": [
+    3,
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "dropped_causes": [],
+ "added_by_residual_pass": [],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}

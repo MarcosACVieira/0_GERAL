@@ -1,0 +1,190 @@
+{
+ "segment": "mobility_customer",
+ "cr": "did not follow the in-app route",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:52 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 16.5,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Driver deliberately takes longer route",
+   "description": "The driver ignores the suggested route or makes unnecessary detours to increase distance and the fare.",
+   "share": 3.9,
+   "examples": [
+    "A corrida aumentou de valor devido ao trajeto do motorista e o reembolso quero que volte pra conta de origem | Samara | Reportei uma corrida em que o motorista mudou o trajeto e aumentou e o reembolso eu quero que volte pra conta de origem | Tá bom | Eu não quero cumpum quero pra fazer na conta de o",
+    "Vcs ainda não responderam se foi o motorista que quis mudar a rota não foi eu que pedi por q eu tenho que pagar outro valor isso tá errado demais | Veja as mensagens aí que eu mandei | Mais foi o motorista que não quis esperar a cariata pô passar pq é eu que tenho que pagar | Ele q modou de rota | E"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Driver makes navigation mistakes",
+   "description": "The driver misses turns, exits, or the destination and backtracks or circles, extending the trip and its cost.",
+   "share": 11.8,
+   "examples": [
+    ", descreva a situação no campo abaixo (opcional): Ele errou a rota .. mudou a tarifa",
+    ". El conductor tomó mal la salida, se puede ver al analizar el recorrido | A 1 km del destino se desvió a huechuraba | Quiero que me devuelvan mi dinero"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Driver follows incorrect GPS guidance",
+   "description": "The navigation system directs the driver onto a wrong or impractical path, sometimes because the mapped drop-off point is misplaced.",
+   "share": 3.0,
+   "examples": [
+    "João | Pedi um reembolso de uma tarifa cobrada a mais devido ao GPS ter enviado o motorista por outro caminho | Já recebi de volta, mas na mensagem dizia que poderiam punir o motorista, só quero deixar claro que ele n teve culpa nenhuma, apenas seguiu o caminho que o GPS ofereceu | Já me devolveram ",
+    "Tive um problema com valor da corrida o GPS da 99 ficou bugado o motorista se perdeu e no final o valor ficou mais alto do que o valor da corrida paguei 40,40 | Tive um problema com valor da corrida o GPS da 99 ficou bugado o motorista se perdeu e no final o valor ficou mais alto do que o valor da c"
+   ]
+  },
+  {
+   "id": 4,
+   "label": "Driver stops for personal errands",
+   "description": "The driver pauses for fuel, food, a bathroom break, or another personal errand while the passenger waits and the fare continues to rise.",
+   "share": 2.6,
+   "examples": [
+    "Tenho pagamento pendente | Mas motorista fez outra rota | Para abastecer | Ela foi aumentanda | Tinha dado 31 como fix o pix",
+    "El conductor fue a una estación de servicio y luego, fue por el recorrido mas largo. Y no dio aviso del extra | Todavía nose me hizo la devolución del extra que se me cobro | El reclamo lo hice en sus momentos, hace días y todavía no tengo ninguna devolución del dinero | Perfecto, esperaré el reembo"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Driver takes a longer route for convenience",
+   "description": "The driver chooses a longer or less direct route for convenience without a passenger-requested stop or a necessary detour.",
+   "share": 18.9,
+   "examples": [
+    "Eu pequei a corrida deu 10.90 na hora de paga deu a mais o motorista fez um percurso longo",
+    "Sin relación con un viaje | Tomé un didi, el cual la tarifa del viaje era de tt, cuando subí el conductor tomó una ruta mucho más larga (nunca me preguntó) y dio una vuelta por lo que se tardó mucho mas de lo estipulado y recorrió mas distancia y esl me lo cobraron a mi, lo cual no me parece para na"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Traffic or road closure changes route",
+   "description": "Congestion, an accident, or a blocked road forces a detour or extends travel time, which increases a time- or distance-based fare.",
+   "share": 3.1,
+   "examples": [
+    ", tudo bem? Esse corrida o motorista fez para uma rota que estava tudo parado , mesmo orientado ir por outro caminho , seguiu pelo caminho pior, ele chegou a desligar o carro por 7 vezes perdendo a vez na passagem do farol várias vezes. | , tudo bem? Esse corrida o motorista fez para uma rota que es",
+    "99 está me cobrando o extra dessa corrida, o qual obteve muito trânsito e entendo que não cabe a mim, pagar o valor extra, diferente do estipulado no pedido da corrida, inclusive o motorista responsável, teve uma ma conduta no volante, pegando até mesmo, vias de maneira oposta (contra mão) com o seu"
+   ]
+  },
+  {
+   "id": 8,
+   "label": "Driver ends trip before destination",
+   "description": "The driver stops or ends the ride before reaching the requested destination, leaving the passenger to dispute the recorded route or fare.",
+   "share": 8.0,
+   "examples": [
+    "Não relacionado a uma corrida | Foi resolvido meu problema? | Já tinha pago minha corrida motorista não encerrou e tá cobrando a mais de mim | Preciso que resolva meu problema | Uso meu aplicativo sempre | Paguei a corrida antes | Já tinha pago minha corrida | Não vou pagar o que ele tá cobrando a m",
+    "Não relacionado a uma corrida | Meu motorista não encerrou a viagem e o valor cobrado foi o dobro | Meu motorista não encerrou a viagem e o valor cobrado foi o dobro"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Driver reports unpaid cash fare",
+   "description": "After collecting cash or a direct transfer, the driver records the ride as unpaid, creating a duplicate balance or charge tied to the trip.",
+   "share": 2.8,
+   "examples": [
+    "El señor alargo la ruta y ahora me oine que no le pague | Y ahora me sale adeudo cuando se le pagó en su totalidad",
+    "Solicité un viaje en la mañana que me indicaba que costaría 79.90 pesos no hubo tráfico llegué antes y aún así al llegar marco 119 como no lo traía completo el conductor lo reportó como faltante y lo tuve que pagar con cargo a mi tarjeta | Para el viaje fue en efectivo los 80 pesos que marcaba me di"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Fare recalculated after route change",
+   "description": "The app recalculates the final fare from the recorded route or trip duration after the upfront estimate, producing an unexpected increase even when the passenger disputes a detour.",
+   "share": 10.7,
+   "examples": [
+    "Me cobraron 7000 pesos y salia 3650 aproximado | Pueden hacerme la devolución del monto adicional que me cobraron | No lo quiero en cupones, quiero la devolución del dinero | Puedo vincular una tarjeta para que lo depositen | 0 estrellas | Los cupones ya estan en mi cuenta?",
+    ", o valor inicial da corrida era 79,00 no final aumentou 55,00. | , muito !"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Extra toll or fee added",
+   "description": "A toll or other trip surcharge is added to the fare even though the passenger says the route did not use that toll road or the fee was not disclosed.",
+   "share": 4.2,
+   "examples": [
+    "Quiero revlamar el cobro de cacetas soi el conductor no tiene la maquina del tag el tomo.una ruta donde ahi mas trafico | 8 mil pesos de diferencia es muy alto injustificadamente c | El conductor no tiene la maquina del tag | Ponen tarifas irreales y luego aumentan | Esta ruta cuando hacen el reembo",
+    "O motorista mudou a rota | , então o motorista mudou a rota , sem avisar e ainda cobrou quase 20 reais a mais | Eu paguei os 32 reais que estava cobrando, e agora está me cobrando 51 reais como isso? | No caso quase 20 reais | Porque eu acho assim se for passar pelo pedágio já inclui no valor pra mi"
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Duplicate or incorrect trip charge",
+   "description": "A trip or fare adjustment is charged more than once, or an unrelated pending amount is attached to the ride, making the final debit exceed the trip fare.",
+   "share": 13.2,
+   "examples": [
+    "Gostaria de falar com um atendente | Foi cobrado uma taxa | Karol | O total da viagem deu 2100 | 21,00* | Sendo que era pra ser 12,00 | Não teve engarrafamento, rota distante nem nada | Ei, esse foi o valor da corrida? | Não moça, a corrida foi devida, mas foi cobrado mais um outro valor como se o p",
+    "Por que motivo me cobrou uma viajem q ja tinha pago junto com essa? | Fui cobrada duas vezes"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Driver falsely claims pickup wait",
+   "description": "The driver records or charges a wait or cancellation fee even though the passenger was ready or the driver had not reached the pickup point.",
+   "residual": true,
+   "share": 1.3,
+   "examples": [
+    "Ayer me cobraron una tarifa por espera pero no fueron ni 5 minutos llegó y estaba sacando foto desde el el celular diciendo que estaba demorado pero yo lo estaba vigilando desde la aplicación dentro de mi casa y por eso me cobró una tarifa de 23400 me cobró 33400 te parece justo",
+    "Ayer me cobraron una tarifa por espera pero no fueron ni 5 minutos llegó y estaba sacando foto desde el el celular diciendo que estaba demorado pero yo lo estaba vigilando desde la aplicación dentro de mi casa y por eso me cobró una tarifa de 23400 me cobró 33400 te parece justo | Me podés contestar"
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "Fare rises after route changes",
+   "root_cause": "Trips become longer through deliberate detours, navigation errors, incorrect GPS guidance, convenience routes, traffic, or recalculation of actual route and duration. Improve route guidance, review driver deviations, protect customers from fare increases caused by driver errors, and explain adjustments before collection.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    10
+   ]
+  },
+  {
+   "label": "Unexpected trip surcharges",
+   "root_cause": "Customers see added fees after personal stops, toll use, or wait charges that do not match their pickup experience. Validate toll and stop charges, require consent for optional detours, and check pickup arrival and wait records before applying fees.",
+   "confidence": "medium",
+   "cause_ids": [
+    4,
+    11,
+    13
+   ]
+  },
+  {
+   "label": "Paid rides leave account balances",
+   "root_cause": "An open trip, a cash payment recorded as unpaid, or a duplicate fare adjustment can leave a balance after the customer believes the ride is settled. Close trips at the actual drop-off, reconcile driver-reported payments, and remove duplicate or unrelated balances.",
+   "confidence": "high",
+   "cause_ids": [
+    8,
+    9,
+    12
+   ]
+  }
+ ],
+ "dropped_causes": [
+  {
+   "id": 7,
+   "label": "Passenger changes destination mid-trip",
+   "description": "The passenger corrects or changes the destination after pickup, so the route and fare differ from the originally quoted trip.",
+   "sessions": 5
+  }
+ ],
+ "added_by_residual_pass": [
+  "Driver falsely claims pickup wait"
+ ],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}

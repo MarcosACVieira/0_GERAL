@@ -1,0 +1,213 @@
+{
+ "segment": "mobility_customer",
+ "cr": "pre-authorization charge",
+ "version": 1,
+ "model": "dia-agent",
+ "built_at": "2026-10-30 19:50 UTC",
+ "window": [
+  "2026-09-29",
+  "2026-10-28"
+ ],
+ "cr_conversations_in_window": 2000,
+ "sample_size": 1000,
+ "no_cause_pct": 9.1,
+ "causes": [
+  {
+   "id": 1,
+   "label": "Unmatched request authorization remains",
+   "description": "When no driver accepts a requested ride, the upfront card or wallet authorization remains held after the request expires or is canceled.",
+   "share": 12.4,
+   "examples": [
+    "Sin relación con una renta | Pedí un cérvico desde Zaragoza está el aeropuerto del dorado al pedirlo me ave un cobro de 33.750de mi tarjeta | Pero al conductor no le llegó en ningún modo | Ha me llamó Luis Un cobró de un servicio por adelantado q nunca le llegó al conductor",
+    "Lo que pasa que cánsele mi vieja por qué nadie quería agarrar mi viaje por era en tarjeta pero ya se descontaron los 250 pesos del viaje se renbolsaran"
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Rider cancellation leaves hold unresolved",
+   "description": "A rider cancels before or shortly after assignment, but the payment authorization is not released through the cancellation flow.",
+   "share": 16.3,
+   "examples": [
+    "Não recebi o reembolso | A viagem foi cancelada | 79,35 no dia 25/10",
+    "No me impacto el reembolso del viaje cancelado | Todavía no me reembolsaron un viaje que cancele porque la espera fue muy larga. Necesito mi dinero"
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Driver cancellation fails to release payment",
+   "description": "A driver cancels, fails to arrive, or abandons the pickup, while the associated charge or hold remains attached to the canceled ride.",
+   "share": 5.6,
+   "examples": [
+    "queria hacer una reclamo | El dia lunes pedi un auto y tenia para pagar con mi tarjeta de debito por cuestiones perdi el didi y me descontaron la plata pero nunca me la devolvieron | El dia lunes pedi un auto y tenia para pagar con mi tarjeta de debito por cuestiones perdi el didi y me descontaron l",
+    "Soliciyñto orientación con un pago que se débito de mi cuenta por 18.800 hoy a las 7;47am | El servicio me lo cancelaron y llegó a recogerme | Hoy solicite un servicio | Cómo estas | Robinson | Hoy solicite un servicio a las 747 am | Nunca llegó | Y me debitaron 18;800 | Estaré aquí pendiente | Yo d"
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Duplicate ride debit",
+   "description": "The payment system posts the same ride amount more than once, creating two or more settled card or wallet debits for one trip.",
+   "share": 6.5,
+   "examples": [
+    "Opa como tô aprendendo a meche ainda | Fiz essa corrida hoje foi pft tudo mais só que descontou duas vezes do cartão pode me ajuda ? Tenho print | Esse primeiro print foi descontado agora segundo tá | Então mandei dois print ai encima o de 12,30 tá | Mais aí depois desconto 12,05 | Pq esse cartão eu",
+    "Sin relación con un viaje | Acabó de ver mi cuenta y se me está cobrando 2 veces | El viaje del dia de hoy | Se hoy realicé un viaje de moto y cheque mi cuenta bancaria y voy viendo que se me está haciéndolo un cargo doble | Se realizo hoy 28 de octubre. Como a la 1 pm desde prolongación división de"
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Retry duplicates an already debited payment",
+   "description": "A payment appears declined or pending in the app after the bank has debited it, so a retry or fallback payment creates a second charge.",
+   "share": 1.6,
+   "examples": [
+    "paguei ontem a corrida direto no cartao de credito coloquei o token pra verificar a compra | E estao me cobrando novamente | Eu nao consigo chamar outro oq esta constando pagamento em aberto | Como fazer outra chamada se esta mostrndo que o pagamento esta pendente | Mesmo nao estandk | Mais eu nao t",
+    "O aplicativo 99 está me informando que o pagamento não foi concluído. Porém foi sim, o dinheiro foi debitado da minha conta hoje cedo. | Tem atendimento humanizado? | A viagem foi hoje às 8h da manhã. A corrida já foi encerrada! o Aplicativo da 99 está me informando que eu não paguei. | Vou detalhar"
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Cash payment leaves card debit active",
+   "description": "The rider pays the driver in cash or Pix, but the app also captures the card authorization or keeps the ride amount as an outstanding balance.",
+   "share": 3.0,
+   "examples": [
+    "o motorista fez eu pagar o valor novamente em dinheiro . Como eu estava sem internet não verifiquei que já havia sido cobrado o valor | Gostaria do estorno do valor | Gustavo | o motorista fez eu pagar o valor novamente em dinheiro . Como eu estava sem internet não verifiquei que já havia sido cobra",
+    "Paguei o dobro do valor da corrida | Paguei no pix para o motorista, 15 reais a mais | Paguei no pix para o motorista, 15 reais a mais"
+   ]
+  },
+  {
+   "id": 8,
+   "label": "Paid ride remains marked unpaid",
+   "description": "A completed ride paid in cash or by another method is not reconciled in the account, leaving a debt that triggers a later debit or blocks new requests.",
+   "share": 4.9,
+   "examples": [
+    "Não relacionado a uma corrida | Eu paguei a corrida e está pendentw. Ainda | O restante eu paguei em dinheiro | Eu paguei a corrida no dinheiro e conta pendente | Consta",
+    "Tão no cobrando um valor a mais n vou paga | Solicitei carro tinha pagado antes | Aí já não posso fazer nada eu paguei antes pelo cartão de crédito | Paguei corrida pelo cartão | Aí depois veio essa cobrando quando ele parou | Mas corrida em si já tinha pago"
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Only part of the canceled amount is released",
+   "description": "The reversal covers only one component, such as the cancellation fee or one installment, while the remaining authorized amount stays charged or held.",
+   "share": 2.2,
+   "examples": [
+    ".no dia 26/10 tem 2 corridas cancelas e uma concluída. No meu cartão está cobrando 90,26 sendo que não tem o valor que realmente usei.",
+    "ya me devolvieron los $20 esos si, pero también me jalaron $61 y solo me están haciendo la devolución de los $20, pero los $61 donde quedan???? | 24 de octubre del 2026 hr 12:27 y el cargo fue de $81 pero me jalaron $20 por cancelar entonces los $61 ya no me los devolvieron | no me cuadra la vdd | d"
+   ]
+  },
+  {
+   "id": 10,
+   "label": "Refund split posts only one installment",
+   "description": "A refund issued as multiple transactions is only partly reflected, leaving one of the separately processed amounts missing from the payment account.",
+   "share": 1.4,
+   "examples": [
+    "Continua cobrando no cartão | Apenas uma foi estornada",
+    "eu pedi o carro no pop e no pop expresso só q estava demorando muito eu cancelei e não recebi os dois rebolsos só recebi um | de 27,04 | e o outro é de 37"
+   ]
+  },
+  {
+   "id": 11,
+   "label": "Refund marked complete before bank posting",
+   "description": "The platform records a refund or release as completed, but the processor or bank does not post the credit to the customer's account within the expected period.",
+   "share": 21.8,
+   "examples": [
+    "tengo un cargo en la tarjeta que se canceló y no se me ha regresado | ya tiene más. de 10 días que sucedió | si es sobre un tema de rembolso de una cancelación de viaje que aún no se me regresa a mi cuenta | okey",
+    "Buen día. Solicito una solución inmediata respecto a los $327.00 retenidos desde el 22 de octubre por un viaje que nunca se realizó. Aunque me confirmaron que los fondos fueron liberados, Nu indica que el movimiento continúa por procesar y que debo esperar hasta el 21 de noviembre. Considero excesiv"
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Refund sent to app wallet instead of source",
+   "description": "The canceled-ride amount is credited to the in-app wallet rather than returned to the original card, bank account, or payment method the customer expects.",
+   "share": 2.8,
+   "examples": [
+    "En mi banca si apara el cobro | Ocupo hablar con un asesor | Pues no tanto por qué pues ahora sí me lo devuelve sería como crédito y yo ya no los ocupo así | Y el otro pues tarda y yo q culpa tengo q su conductor cancelo sabes | Pues entonces no es nada de ayuda la verdad si de todas formas tengo q ",
+    "Quiero mi reembolso | María | Quiero un reembolso de un arriendo que pedí y lo cancelé | Perfecto | Que procede? | Pero se reembolsó a DiDi pay | No quiero a eso"
+   ]
+  },
+  {
+   "id": 13,
+   "label": "Temporary hold mistaken for final fare",
+   "description": "The initial authorization remains visible alongside the settled trip fare, making the customer appear charged twice until the issuer releases the temporary hold.",
+   "share": 1.9,
+   "examples": [
+    "Buen dia Ocurrió el 24 de octubre en 2 viajes se me retuvo el cargo en tarjeta y al finalizar el viaje se volvió a cobrar 2 veces | Si se hizo un doble cobro porque en mi cue ta ya aparecen los 46 pesos declarados el 24 de octubre y hay una retención por los mismos 46 pesos | Y cual es la diferencia",
+    "me cobraron el viaje dos veces el primero antes de comenzar y el segundo cuando ya se hizo el viaje | Ya te dije | Cobro doble | Tengo el cobro antes del viaje | Y después del viaje también me cobraron otra vez"
+   ]
+  },
+  {
+   "id": 14,
+   "label": "Final fare differs from accepted estimate",
+   "description": "The captured fare exceeds the quoted or discounted amount because of a fare recalculation, route or time change, service-tier mismatch, or added fee.",
+   "share": 3.9,
+   "examples": [
+    "Ao solicitar a corrida deu um valor | No final da corrida deu a mais",
+    "O valor foi cobrado a mais | Foi cartão de crédito | Complicado né"
+   ]
+  },
+  {
+   "id": 15,
+   "label": "Unrecognized ride debit",
+   "description": "A charge is tied to a ride the customer says they did not request or take, indicating an account, card, or ride attribution problem that requires investigation.",
+   "share": 4.9,
+   "examples": [
+    "consigo | basicamente cobrou 44 reais aleatoriamente do meu cartão, sendo que não fiz corrida nem pedi nada!",
+    "eu não reconheço esse valor foi descontado meu cartão | Tem essa corrida que não fui eu mais foi descontado meu cartão débito | Foi descontado meu cartão 48 que eu não chamei Uber hoje | Estou meu serviço aqui Osasco | Sim não acho justo desconta meu cartão ainda vou ter espera 10 dias"
+   ]
+  },
+  {
+   "id": 16,
+   "label": "Authorization amount exceeds ride settlement",
+   "description": "The initial hold is larger than the completed ride fare, but the unused difference is not released or is only partly returned after settlement.",
+   "share": 1.7,
+   "examples": [
+    "Não foi essa corrida | Foi a corrida de 24 reais pre autorização vcs não devolveram | Não foi essa corrida | Senhor amado não é essa corrida | Quero cancelar minha contab | Pessimos | Me roubaram",
+    "Se me realizo una retención por 365 pesos para el viaje pero no me los han regresado y el viaje que tome unos minutos después se cobro completo de 426 pesos. Me han realizado retenciones antes pero la devolución es muy rápida y en este caso no | Sábado 24 de octubre 2026 a las 18:59 por un valor de "
+   ]
+  }
+ ],
+ "symptoms": [
+  {
+   "label": "Canceled requests leave funds unavailable",
+   "root_cause": "Customers see money held or deducted after canceled, unmatched, or interrupted requests, and refunds may be partial or credited to the wrong place. The fix is to release the full unused amount reliably and show its destination and posting status.",
+   "confidence": "high",
+   "cause_ids": [
+    1,
+    2,
+    3,
+    9,
+    10,
+    11,
+    12,
+    16
+   ]
+  },
+  {
+   "label": "Ride payment records conflict",
+   "root_cause": "Customers see duplicate debits, unexpected fare amounts, or balances that disagree with how they paid or whether they took the ride. The fix is to reconcile authorizations, final fares, cash or Pix payments, and ride records before charging or collecting a balance.",
+   "confidence": "high",
+   "cause_ids": [
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15
+   ]
+  }
+ ],
+ "dropped_causes": [
+  {
+   "id": 4,
+   "label": "Canceled ride auto-closes without reversal",
+   "description": "The app or dispatch system closes a request automatically after a matching or connection issue without triggering the payment reversal.",
+   "sessions": 3
+  }
+ ],
+ "added_by_residual_pass": [],
+ "params": {
+  "discovery_sample": 200,
+  "launch_labelled_per_cr": 1000,
+  "min_cause_share": 0.01,
+  "residual_min_conversations": 30,
+  "residual_max_conversations": 150
+ }
+}
